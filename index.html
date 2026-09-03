@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Tii — BraveSaver &amp; Glossa</title>
+  <meta name="description" content="Zwei Chrome- und Brave-Extensions von Tii: BraveSaver parkt tote Tabs. Glossa übersetzt per Hover. Kostenlos, Open Source.">
+  <meta name="theme-color" content="#07060F">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Zum Inhalt</a>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="mark" href="#top">
+      <span class="mark-glyph" aria-hidden="true"></span>
+      <span translate="no">Tii</span>
+    </a>
+    <div class="top-right">
+      <nav>
+        <a href="#bravesaver" translate="no">BraveSaver</a>
+        <a href="#glossa" translate="no">Glossa</a>
+      </nav>
+      <div class="lang" role="group" data-i18n-aria="langGroup" aria-label="Sprache">
+        <button type="button" class="lang-btn" data-set-lang="de" aria-pressed="true">DE</button>
+        <button type="button" class="lang-btn" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="fx-toggle" type="button" id="fx-toggle" aria-pressed="true" data-i18n-aria="fxAria" aria-label="Animierten Hintergrund umschalten">FX an</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <p class="hud">CHROME · BRAVE · OPEN SOURCE</p>
+      <h1><span data-i18n="heroLine1">Zwei Extensions.</span><br><span data-i18n="heroLine2">Ein ruhigerer Browser.</span></h1>
+      <p class="lede" data-i18n="lede">BraveSaver parkt tote Tabs. Glossa übersetzt, sobald die Maus stehen bleibt. Beides von Tii — kostenlos, ohne Konto, im Chrome Web Store.</p>
+    </section>
+
+    <article class="product" id="bravesaver">
+      <div class="product-copy">
+        <p class="hud hud-amber">LOAD CELL</p>
+        <div class="product-title">
+          <img src="assets/bravesaver-icon.png" width="48" height="48" alt="">
+          <h2 translate="no">BraveSaver</h2>
+        </div>
+        <p class="pitch" data-i18n="bsPitch">Parks inaktive Tabs. Der Tab bleibt in der Leiste — der Prozess ist weg. Klick lädt neu.</p>
+        <ul class="facts">
+          <li data-i18n="bsFact1">Auto-Park nach Inaktivität, härter wenn RAM knapp ist</li>
+          <li data-i18n="bsFact2">Formulare, Pins und Ton-Tabs bleiben wach</li>
+          <li data-i18n="bsFact3">Stumme Hintergrund-Videos und Animationen werden gedrosselt</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-amber" href="https://chromewebstore.google.com/detail/bravesaver/biaipdcolloigdioodclahglfphchpca" rel="noopener noreferrer">Chrome Web Store</a>
+          <a class="btn btn-ghost" href="https://github.com/TiiTime/BraveSaver" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="product-shots">
+        <button class="shot shot-main" type="button" data-full="assets/bravesaver-ram.png" data-i18n-aria="bsRamAria" aria-label="RAM-Vergleich vergrößern">
+          <img src="assets/bravesaver-ram.png" width="1280" height="800" fetchpriority="high" data-i18n-alt="bsRamAlt" alt="Task-Manager-Vergleich: ohne BraveSaver 3,7 GB, mit BraveSaver 2,2 GB RAM">
+        </button>
+        <button class="shot shot-side" type="button" data-full="assets/bravesaver-popup.png" data-i18n-aria="bsPopupAria" aria-label="Popup-Screenshot vergrößern">
+          <img src="assets/bravesaver-popup.png" width="1280" height="800" loading="lazy" data-i18n-alt="bsPopupAlt" alt="BraveSaver Popup: geparkte Tabs, Last und Park-Modi">
+        </button>
+      </div>
+    </article>
+
+    <article class="product product-flip" id="glossa">
+      <div class="product-copy">
+        <p class="hud hud-cyan">HOVER TRANSLATOR</p>
+        <div class="product-title">
+          <img src="assets/glossa-icon.png" width="48" height="48" alt="">
+          <h2 translate="no">Glossa</h2>
+        </div>
+        <p class="pitch" data-i18n="glPitch">Maus eine Sekunde auf ein Wort — Übersetzung im Popup. Text markieren geht sofort.</p>
+        <ul class="facts">
+          <li data-i18n="glFact1">Zielsprache oben, Original unten — Maus weg, Popup weg</li>
+          <li data-i18n="glFact2">80+ Sprachen, Shadow-DOM (Seiten-CSS kann es nicht zerlegen)</li>
+          <li data-i18n="glFact3">Kein Tii-Konto, kein eigener Server</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-cyan" href="https://chromewebstore.google.com/detail/glossa/jopklcgamodpahihakgiogohpiaafamm" rel="noopener noreferrer">Chrome Web Store</a>
+          <a class="btn btn-ghost" href="https://github.com/TiiTime/Glossa" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="product-shots">
+        <button class="shot shot-main" type="button" data-full="assets/glossa-hover.png" data-i18n-aria="glHoverAria" aria-label="Hover-Screenshot vergrößern">
+          <img src="assets/glossa-hover.png" width="1280" height="800" loading="lazy" data-i18n-alt="glHoverAlt" alt="Glossa Hover-Popup: Wort anhoveren, deutsche Übersetzung erscheint">
+        </button>
+        <button class="shot shot-side" type="button" data-full="assets/glossa-select.png" data-i18n-aria="glSelectAria" aria-label="Markierungs-Screenshot vergrößern">
+          <img src="assets/glossa-select.png" width="1280" height="800" loading="lazy" data-i18n-alt="glSelectAlt" alt="Glossa: markierter Satz wird vollständig übersetzt">
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong translate="no">Tii</strong> · <span data-i18n="footerMeta">kostenlos · MIT</span></p>
+    <p><a href="https://github.com/TiiTime" rel="noopener noreferrer">github.com/TiiTime</a></p>
+  </footer>
+
+  <dialog id="lightbox" data-i18n-aria="lightboxAria" aria-label="Bildansicht">
+    <button class="lightbox-close" type="button" data-i18n-aria="closeAria" aria-label="Schließen">×</button>
+    <img alt="">
+  </dialog>
+
+  <script src="i18n.js"></script>
+  <script src="fx.js"></script>
+</body>
+</html>
