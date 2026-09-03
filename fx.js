@@ -149,6 +149,7 @@
   }
   toggle.addEventListener("click", () => setFx(!running));
   document.addEventListener("tii-lang", setFxLabel);
+  setFxLabel();
   if (reduce) setFx(false);
 
   window.addEventListener("resize", () => {
