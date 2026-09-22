@@ -1,6 +1,6 @@
 # Tii
 
-Portfolio for **BraveSaver** and **Glossa**.
+Portfolio for **BraveSaver**, **Glossa**, and **TikTube**.
 
 **Live:** https://tiitime.github.io/Tii/
 

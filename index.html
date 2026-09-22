@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Tii — BraveSaver &amp; Glossa</title>
-  <meta name="description" content="Zwei Chrome- und Brave-Extensions von Tii: BraveSaver parkt tote Tabs. Glossa übersetzt per Hover. Kostenlos, Open Source.">
+  <title>Tii — BraveSaver, Glossa &amp; TikTube</title>
+  <meta name="description" content="BraveSaver parkt tote Tabs. Glossa übersetzt per Hover. TikTube spielt YouTube Shorts und TikTok in einem Fenster. Von Tii.">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
   <link rel="canonical" href="https://tiitime.github.io/Tii/">
@@ -14,8 +14,8 @@
   <link rel="alternate" hreflang="x-default" href="https://tiitime.github.io/Tii/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tiitime.github.io/Tii/">
-  <meta property="og:title" content="Tii — BraveSaver &amp; Glossa">
-  <meta property="og:description" content="Zwei Chrome- und Brave-Extensions von Tii: BraveSaver parkt tote Tabs. Glossa übersetzt per Hover.">
+  <meta property="og:title" content="Tii — BraveSaver, Glossa &amp; TikTube">
+  <meta property="og:description" content="BraveSaver parkt tote Tabs. Glossa übersetzt per Hover. TikTube spielt YouTube Shorts und TikTok in einem Fenster.">
   <meta property="og:image" content="https://tiitime.github.io/Tii/assets/glossa-promo.png">
   <meta name="theme-color" content="#07060F">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -39,6 +39,7 @@
       <nav>
         <a href="#bravesaver" translate="no">BraveSaver</a>
         <a href="#glossa" translate="no">Glossa</a>
+        <a href="#tiktube" translate="no">TikTube</a>
       </nav>
       <div class="lang" role="group" data-i18n-aria="langGroup" aria-label="Sprache">
         <button type="button" class="lang-btn" data-set-lang="de" aria-pressed="true">DE</button>
@@ -51,8 +52,8 @@
   <main id="main">
     <section class="hero" id="top">
       <p class="hud">CHROME · BRAVE · OPEN SOURCE</p>
-      <h1><span data-i18n="heroLine1">Zwei Extensions.</span><br><span data-i18n="heroLine2">Ein ruhigerer Browser.</span></h1>
-      <p class="lede" data-i18n="lede">BraveSaver parkt tote Tabs. Glossa übersetzt, sobald die Maus stehen bleibt. Beides von Tii — kostenlos, ohne Konto, im Chrome Web Store.</p>
+      <h1><span data-i18n="heroLine1">Zwei Extensions.</span><br><span data-i18n="heroLine2">Ein Fenster für Shorts.</span></h1>
+      <p class="lede" data-i18n="lede">BraveSaver parkt tote Tabs. Glossa übersetzt, sobald die Maus stehen bleibt. TikTube hält YouTube Shorts und TikTok in einem kleinen Fenster.</p>
     </section>
 
     <article class="product" id="bravesaver">
@@ -94,7 +95,7 @@
         <ul class="facts">
           <li data-i18n="glFact1">Zielsprache oben, Original unten — Maus weg, Popup weg</li>
           <li data-i18n="glFact2">80+ Sprachen, Shadow-DOM (Seiten-CSS kann es nicht zerlegen)</li>
-          <li data-i18n="glFact3">Kein Tii-Konto, kein eigener Server</li>
+          <li data-i18n="glFact3">Kein eigener Server</li>
         </ul>
         <div class="actions">
           <a class="btn btn-cyan" href="https://chromewebstore.google.com/detail/glossa/jopklcgamodpahihakgiogohpiaafamm" rel="noopener noreferrer">Chrome Web Store</a>
@@ -107,6 +108,31 @@
         </button>
         <button class="shot shot-side" type="button" data-full="assets/glossa-select.png" data-i18n-aria="glSelectAria" aria-label="Markierungs-Screenshot vergrößern">
           <img src="assets/glossa-select.png" width="1280" height="800" loading="lazy" data-i18n-alt="glSelectAlt" alt="Glossa: markierter Satz wird vollständig übersetzt">
+        </button>
+      </div>
+    </article>
+
+    <article class="product" id="tiktube">
+      <div class="product-copy">
+        <p class="hud hud-amber">DESKTOP</p>
+        <div class="product-title">
+          <img src="assets/tiktube-icon.png" width="48" height="48" alt="">
+          <h2 translate="no">TikTube</h2>
+        </div>
+        <p class="ask" data-i18n="ttAsk">Du willst Doomscrollen?</p>
+        <p class="pitch" data-i18n="ttPitch">Ein kleines Windows-Fenster für YouTube Shorts und TikTok. Rad nach unten: nächstes Video. Rad nach oben: zurück.</p>
+        <ul class="facts">
+          <li data-i18n="ttFact1">YouTube als Shorts, TikTok als normale Seite</li>
+          <li data-i18n="ttFact2">Fenster bleibt groß genug, damit die Videos starten</li>
+          <li data-i18n="ttFact3">Keine fremden Videos werden heruntergeladen</li>
+        </ul>
+      </div>
+      <div class="product-shots shots-2">
+        <button class="shot" type="button" data-full="assets/tiktube-youtube.png" data-i18n-aria="ttYtAria" aria-label="YouTube-Ansicht vergrößern">
+          <img src="assets/tiktube-youtube.png" width="1280" height="720" loading="lazy" data-i18n-alt="ttYtAlt" alt="TikTube-Fenster mit einem YouTube-Short">
+        </button>
+        <button class="shot" type="button" data-full="assets/tiktube-tiktok.png" data-i18n-aria="ttTtAria" aria-label="TikTok-Ansicht vergrößern">
+          <img src="assets/tiktube-tiktok.png" width="1280" height="720" loading="lazy" data-i18n-alt="ttTtAlt" alt="TikTube auf TikTok">
         </button>
       </div>
     </article>

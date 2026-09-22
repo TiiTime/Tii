@@ -390,6 +390,24 @@ nav a:focus-visible {
   align-items: end;
 }
 
+.product-shots.shots-2 {
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.shots-2 .shot {
+  aspect-ratio: 16 / 10;
+}
+
+.ask {
+  margin: 0.85rem 0 0.35rem;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
 .shot {
   margin: 0;
   padding: 0;
@@ -510,7 +528,8 @@ footer a:focus-visible {
 @media (max-width: 520px) {
   nav { gap: 0.9rem; }
 
-  .product-shots {
+  .product-shots,
+  .product-shots.shots-2 {
     grid-template-columns: 1fr;
   }
 
